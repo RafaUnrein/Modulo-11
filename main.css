@@ -5,14 +5,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav{
+    display: none;
+}
+
 .contanier{
     max-width: 1024px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
+    border-bottom: 1px solid red; 
 }
-.contanier{
-    border-bottom: 1px solid white;
-    padding: 16px 0;
+
+.contanier h1{
+    cursor: pointer;  
+    margin-bottom: 20px; 
+    color: white;     
+}
+
+.menu-hamburger{
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 5px;    
 }
 
 header .contanier{
@@ -21,25 +52,133 @@ header .contanier{
     align-items: center;
     justify-content: space-between;
 }
-.menu{
-    display: flex;
-    list-style: none;
-    padding-top: 16px;
-    border-bottom: 1px solid black;
+header{
+    padding: 16px 0 0;
+    border-top: 1px solid white;
+    border-bottom: 2px solid red;
+    background-color: red;
 }
 
-.menu li{
-    margin-left: 20px;
+header form input{
+    padding: 5px;
+    border-color: white;     
+}
+
+header button{
+    padding: 5px;
+    color: white;
+    background-color:darkred ;
+    border:1px solid white;
+}
+
+header nav{
+    border-top: 1px solid white; 
+    background-color: white; 
+        
+}
+
+.menu > li{
     font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    cursor: pointer; 
+    float: left;
+    padding: 16px;
+    list-style: none; 
+    position: relative;         
 }
 
-.submenu li a{
-    font-size: 14px;
-    display: none;
+.menu li:hover .submenu{
+    display: block;             
+}
+
+.menu li:hover{
+    text-decoration: underline;  
+    transition: 0.5s;      
+    background-color: white;        
 }
 
 .submenu{
-    display: flex;
-    padding: 10px;
+    font-size: 14px;
+    display: none; 
+    position: absolute;  
+    left: 0;             
+}
+
+.submenu li{
+    font-size: 14px;  
     list-style: none;
+    padding: 8px; 
+    background-color:#ccc; 
+    width: 300px;              
+}
+
+.submenu li a{    
+    color: black;
+    text-decoration: none;     
+}
+
+.clear{
+    clear: both;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;    
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 32px;
+    text-align: inherit;
+    text-decoration: none;
+}
+
+.destaque .noticia img{
+    margin-right: 10px;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.novidades{
+    margin-right: 16px;
+}
+
+.novidades .noticia img{
+    height: 250px;
+    width: 100%;  
+}
+
+aside{
+    padding-left: 40px;
+}
+
+aside .noticia{    
+    margin-bottom: 32px;
+}
+
+aside .noticia h3{    
+    margin-top: 5px;
+    text-align: justify;    
+    width: 73.5%;    
+}
+
+aside a{
+    text-decoration: none;
+}
+
+section h2{
+    margin-top: 48px;
+    margin-bottom: 24px;    
+}
+
+.conteudo .destaque{
+    margin-left: 16px;
+
 }

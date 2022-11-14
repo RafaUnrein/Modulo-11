@@ -4,50 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+    <title>G1 - Portal de notícias</title>
+    <link rel="icon" href="img/G1.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
         <div  class="contanier">
-            <h1>Noticias G1</h1>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>G1</h1>
             <form action="">
-                <input type="text" placeholder="digite algo">
+                <input type="text" placeholder="Pesquisar">
                 <button>Pesquisar</button>
             </form>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li>
-                    Esportes
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Futebol</a> 
-                        </li>
-                        <li>
-                            <a href="#">Basquete</a> 
-                        </li>
-                        <li>
-                            <a href="#">Vôlei</a> 
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Economia
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Bolsa de valores</a> 
-                        </li>
-                        <li>
-                            <a href="#">Moeda internacional</a> 
-                        </li>
-                        <li>
-                            <a href="#">Câmbio</a> 
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>    
+        </div> 
+        <div class="contanier-flex">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        Sports
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Futebol</a> 
+                            </li>
+                            <li>
+                                <a href="#">Basquete</a> 
+                            </li>
+                            <li>
+                                <a href="#">Vôlei</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Economy
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Bolsa de valores</a> 
+                            </li>
+                            <li>
+                                <a href="#">Moeda internacional</a> 
+                            </li>
+                            <li>
+                                <a href="#">Câmbio</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div> 
+            </nav>
+        </div>        
+    </header>     
+    <div class="conteudo contanier">
+        <main>
+            <section class="destaque">
+                <h2>Destaques</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img01.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img01.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img01.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img02.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img03.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="img/img04.jpg" alt="">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur beatae debitis nemo reiciendis enim, rem excepturi!!
+                        </h3>
+                    </a>
+                </article>
+            </section>
+        </aside>        
+    </div> 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/messages_pt_BR.min.js"></script>   
+        <script src="main.js"></script>        
 </body>
 </html>
